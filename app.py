@@ -5,7 +5,7 @@ from groq import Groq
 app = Flask(__name__)
 
 # Initialize Groq client
-grok_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+grok_client = Groq(api_key="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")
 
 def generate_meal_plan(keywords):
     prompt = (
