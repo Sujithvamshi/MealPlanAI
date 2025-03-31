@@ -53,7 +53,7 @@ def index():
         return render_template('index.html', meal_plan=meal_plan)
     return render_template('index.html', meal_plan=None)
 
-@app.route('/api/meal-plan', methods=['POST'])
+@app.route('/meal-plan', methods=['POST'])
 def api_meal_plan():
     keywords = request.json.get('keywords', '')
     meal_plan_text = generate_meal_plan(keywords)
